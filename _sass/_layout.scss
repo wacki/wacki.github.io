@@ -41,18 +41,23 @@ hr {
     color: #C8E9F2;
 }
 .social-icon {
-    background: $main-color-dark;
-    color: $main-color-light;
-    font-size: 16px;
+    background: #0ca0d7;
+    color: #b6dbe5;
+    /* font-size: 16px; */
     text-align: center;
     width: 27px;
     height: 27px;
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     line-height: 27px;
     margin-right: 4px;
     margin-bottom: 9px;
     float: left;
+    padding: 0;
+}
+
+.fa-twitch {
+	line-height: 28px;
 }
 
 .social-icon:hover {
@@ -93,15 +98,18 @@ hr {
 
 .post h3 {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 23px;
 	margin: 0px;
     color: $main-color-light;
 }
 
 .post p {
     font-family: LaoUI;
+	font-size: 16px;
 }
-
+.post a {
+	font-size: 14px;
+}
 .post .inline-image {
 	width: 90%;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.52);
