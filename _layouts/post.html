@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include disqus-comments.html %}
+
+<div class="post">
+    <div>
+        <h3>{{ page.title }}</h3>
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+    </div>
+    <hr />
+    
+    {% for category in page.categories %}
+    <span class="label label-default">{{ category }}</span>
+    {% endfor %}
+
+    <p>{{ content }}</p>
+</div>
+
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

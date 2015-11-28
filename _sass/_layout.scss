@@ -1,0 +1,270 @@
+
+@font-face {
+	font-family: 'LaoUI';
+	src: url('../assets/fonts/LaoUI.ttf');  
+}
+
+
+body {
+    background-color: $background-color;
+	/* padding-top:73px; */
+	color: $text-color;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+hr {
+	border-color: #3A3A3A;
+	margin: 8px 0px;
+	clear: both;
+}
+.rss-link {
+    margin-left: 4px;
+    font-size: 18px;
+}
+.post hr {
+	border-color: #444444;
+}
+
+.post time {
+    font-style: italic;
+    font-size: 13px;
+}
+
+.label-default {
+    background-color: $main-color-dark;
+}
+.label {
+    color: #C8E9F2;
+}
+.social-icon {
+    background: $main-color-dark;
+    color: $main-color-light;
+    font-size: 16px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    display: block;
+    vertical-align: middle;
+    line-height: 27px;
+    margin-right: 4px;
+    margin-bottom: 9px;
+    float: left;
+}
+
+.social-icon:hover {
+    background-color: $main-color-light;
+	color: $main-color-dark;
+}
+
+.sidebar-header {
+	color: $main-color-dark;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0px;
+	margin-bottom: 8px;
+	font-family: LaoUI;
+}
+
+.rss-link {
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.sidebar p {
+	font-size: 12px;
+	font-family: LaoUI;
+}
+
+.post {
+	background-color: $light-gray;
+	padding: 10px;
+	margin-bottom: 10px;    
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.21);
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.21);
+}
+
+.post h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0px;
+    color: $main-color-light;
+}
+
+.post p {
+    font-family: LaoUI;
+}
+
+.post .inline-image {
+	width: 90%;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.52);
+    background-color: #525252;
+    padding: 2px;
+}
+
+.post .inline-image img {
+	width: 100%;
+}
+
+.post .inline-image p {
+    padding: 3px;
+    text-shadow: none;
+    margin: 0px;
+    font-style: italic;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+
+.post .post-footer {
+	font-size: 10px;
+	margin: 0px;
+}
+
+a {
+    color: $main-color-dark;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: $main-color-dark;
+    text-decoration: underline;
+}
+.post .post-footer .readmore {
+	float: right;
+}
+
+/* bootstrap changes */
+.navbar-inverse {
+    background-color: $main-color-dark;
+}
+
+.navbar-static-top {
+    border-width: 0px;
+}
+
+.navbar {
+    margin-bottom: 15px;
+}
+
+.post-history h4 {
+	font-size: 15px;
+	margin: 2px 0px;
+}
+
+.post-history ul {
+	padding-left: 16px;
+	font-size: 12px;
+	/* list-style: none; */
+}
+.post-history li {
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: rgb(36, 169, 219);
+}
+
+/* border color of mobile nav icon */
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+    margin-top: 14px;
+}
+
+/* hover style for mobile nav icon */
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: $main-color-dark;
+}
+
+/* border at the top of the mobile navigation */
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: $main-color-dark-shadow;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: $main-color-light;
+	font-size: 18px;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    background: url('../assets/images/logo_small.png') no-repeat center center;
+    width: 162px;
+    height: 62px;    
+    margin-left: 15px;
+	margin-top: 7px;
+
+}
+
+@media  (min-width: 768px), (min-width: 992px) {
+
+	body {
+		/* padding-top:110px; */
+	}
+	
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: right;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+	.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+		color: #fff;
+		background-color: transparent;
+	}
+	.content-col {
+		float: left;
+		min-height: 200px;
+	}
+    .container {
+        width: 95%;
+    }
+    
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+
+	ul.navbar-nav {
+		margin-top: 51px;
+		margin-right: 25%;
+		margin-bottom: -1px;
+	}
+
+	.navbar-nav>li>a {
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+
+	
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { 
+		margin-left: 0px;
+		background: url('../assets/images/logo_big.png') no-repeat center center;
+		width: 238px;
+		height: 87px;
+		margin-top: 8px;
+	}
+}
+
+
+@media (min-width: 1050px) {
+
+    .container {
+        width: $content-width-large;
+    }
+}

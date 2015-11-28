@@ -1,0 +1,16 @@
+<div class="post">
+    <div>
+        <h3>{{ post.title }}</h3>
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+    </div>
+
+    <hr />
+
+    {% for category in post.categories %}
+    <span class="label label-default">{{ category }}</span>
+    {% endfor %}
+
+    <p>{{ post.excerpt }}</p>
+
+    <span class="readmore"><a href="{{ post.url }}">read more</a></span>
+</div>

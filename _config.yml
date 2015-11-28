@@ -1,0 +1,41 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: wacki
+baseurl: "" # the subpath of your site, e.g. /blog
+url:			"http://wacki.me" # the base hostname & protocol for your site
+
+permalink:		'/blog/:year/:month/:title/'
+
+# Author
+author:
+  name: Marc Wacker
+  email: wackiblog@gmail.com
+  about_me: > # this means to ignore newlines until "baseurl:"
+    I am a programmer trying to get into game development. 
+    This blog is meant to document my learning process and 
+    will include the odd post about other stuff happening 
+    in my life.
+  twitter: wacki
+  github: wacki
+  twitch: wackitv
+  linkedin: #marc-wacker-266136b3
+  facebook:
+  stackoverflow:
+  disqus-shortname: wacki
+
+description: > 
+  Personal blog of Marc Wacker. I use this blog to document my learning process
+  in different areas. Mostly game development. I might also use it for other stuff.
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+
+

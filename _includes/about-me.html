@@ -1,0 +1,40 @@
+<span class="sidebar-header">About me</span>
+<hr />
+<p>{{ site.author.about_me }}</p>
+
+{% if site.author.twitter %}
+<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+	<span class="social-icon">
+		<i class="fa fa-twitter"></i>
+	</span>
+</a>
+{% endif %}
+{% if site.author.github %}
+<a href="https://github.com/{{ site.author.github }}" target="_blank">
+	<span class="social-icon">
+		<i class="fa fa-github"></i>
+	</span>
+</a>
+{% endif %}
+{% if site.author.email %}
+<a href="mailto:{{ site.author.email }}" target="_blank">
+	<span class="social-icon">
+		<i class="fa fa-envelope"></i>
+	</span>
+</a>
+{% endif %}
+{% if site.author.twitch %}
+<a href="http://www.twitch.tv/{{ site.author.twitch }}" target="_blank">
+	<span class="social-icon">
+		<i class="fa fa-twitch"></i>
+	</span>
+</a>
+{% endif %}
+{% if site.author.linkedin %}
+<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
+	<span class="social-icon">
+		<i class="fa fa-linkedin"></i>
+	</span>
+</a>
+{% endif %}
+<div style="clear:both"></div>
