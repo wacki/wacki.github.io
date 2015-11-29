@@ -14,6 +14,9 @@
 				<ul class="nav navbar-nav">
                 {% assign sorted_pages = (site.pages | sort: 'sort-id' %}
                 {% for nav_entry in sorted_pages %}
+					{% if nav_entry.layout == null %}
+						{% continue %}
+					{% endif %}
 					<li {% if page.url == nav_entry.url %}class="active"{% endif %}>
 						<a href="{{nav_entry.url}}" class="active">{{nav_entry.title | downcase}}</a>
 					</li>
