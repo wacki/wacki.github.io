@@ -11,37 +11,73 @@ $highlight-color-six: #b1d631;
 $highlight-color-seven: #ff9800;
 
 
-.highlight {
-    background: #212121;
-	margin-bottom: $spacing-unit / 2;
-	text-shadow: none;
-	max-height: 500px;
-	color: $highlight-color-one;
+.highlighttable {
+	max-height: 400px;
+	overflow-x:auto;
+	display:block;
+	margin: 5px 0px;
+	background: #151414;
+	
+	.linenos, .highlight {	
+		background: #212121;
+		text-shadow: none;
+		color: $highlight-color-one;
+	}
 
-    .highlighter-rouge & {
-      background: #eef;
-    }
-	
-	pre {
-		padding: 5px;
-		background-color: transparent;
-		border-radius: 0px;
-		border: 0px;
-	}
-	
-	> pre {
-		padding: 0px;
-		max-height: 400px;
-	}
-	
-	.gutter {
+	.linenos {
 		background-color: #151414;
+		padding: 0px 5px;
 	}
 	
+	td.code {
+		width:100%;
+		background-color: transparent;
+	}	
+	.highlight {
 	
-	table {
-		margin-bottom: -36px;
+		padding-left: 10px;
 	}
+	
+	 pre {
+		border-radius: 0px;
+		border: 0;
+		background-color: transparent;
+		margin: 0px;    
+		padding: 6px 0px;
+	}
+	
+	pre code {
+	  white-space: pre;
+	}
+}
+.post {
+	  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  10px;
+      height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #404040;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #151414;
+  }
+  ::-webkit-scrollbar-corner {
+	background: rgba(0,0,0,0.0); 
+	}
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: #fff;
+    scrollbar-track-color: #000;
+  }
+}
+  
+.highlight {
+
+	
+
 	
 	.hll { background-color: #ffffcc }
 	.c { color: $highlight-color-three; font-style: italic} /* Comment */

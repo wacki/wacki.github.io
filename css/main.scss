@@ -41,5 +41,7 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+		"octicons",
+        "github-card"
 ;

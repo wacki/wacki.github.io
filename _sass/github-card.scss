@@ -1,0 +1,38 @@
+.github-card {
+    border-radius: 3px;
+	padding: 4px 8px 0;
+    background: #1F1F1F;
+	display: inline-block;
+
+	.octicon-repo {
+		margin-right: 2px;
+		margin-top: 3px;
+		font-size: 16px;
+		color: #B6DBE5;
+		float: left;
+	}
+	.status strong {
+		font-size: 12px;
+		padding-right: 5px;
+	}
+.repo-name {
+    vertical-align: top;
+	padding-left: 6px;
+}
+
+.header {
+	font-size: 14px;
+}
+.status {
+    font-size: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.footer {
+    border-top: 1px solid #353535;
+    padding: 0px 0px 3px;
+    color: #ADADAD;
+    margin-top: 5px;
+    text-shadow: none;
+}
+}

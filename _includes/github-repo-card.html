@@ -1,0 +1,31 @@
+
+
+<div class="github-card" id="repo-{{include.user}}-{{include.repo}}">
+	<div class="header">
+		<span class="octicon octicon-repo"></span>
+		<span class="repo-name">
+			<span class="author"><a href="https://github.com/{{include.user}}" class="url fn" itemprop="url" rel="author" target="_blank"><span itemprop="title">{{include.user}}</span></a></span>
+			<span class="path-divider">/</span>
+			<strong><a href="https://github.com/{{include.user}}/{{include.repo}}" data-pjax="#js-repo-pjax-container" target="_blank">{{include.repo}}</a></strong>
+		</span>
+	</div>
+	<div class="footer"><span class="status"><strong class="fork-count">0</strong>Forks</span><span class="status"><strong class="star-count">0</strong>Stars</span></div>
+</div>
+
+<script type="text/javascript">
+ $(function () {
+	$.ajax({
+	   url: 'https://api.github.com/repos/{{include.user}}/{{include.repo}}',
+	   success: function(data) {
+		console.log(data);
+		
+		$('div[id="repo-{{include.user}}-{{include.repo}}"] .fork-count').html(data.forks_count);
+		$('div[id="repo-{{include.user}}-{{include.repo}}"] .star-count').html(data.stargazers_count);
+		console.log();
+		
+		
+		console.log(document.getElementById("repo-{{include.user}}-{{include.repo}}"));
+	   }	   
+	});
+	});
+</script>
