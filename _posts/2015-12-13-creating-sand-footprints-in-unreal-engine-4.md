@@ -67,17 +67,21 @@ The blueprint prototype is working properly, everything looks good, we can now g
 
 We start by adding a foot down function to our third person character which will get called instead of our current blueprint function. 
 
-{% highlight cpp linenos=table %}
+{% highlight cpp %}
 protected:
     void Trace(FHitResult& OutHit, const FVector& Location) const;
 
 public:
     UFUNCTION(BlueprintCallable, Category = "Character")
     void FootDown(const UArrowComponent* FootArrow) const;
+
 {% endhighlight %}
 
+
 Then, in the implementation of the functions, we’re going to just display the surface normal to get something on screen again.
-{% highlight cpp linenos=table %}
+
+
+{% highlight cpp %}
 void AFootprintsCharacter::Trace(FHitResult& OutHit, const FVector& Location) const
 {
     FVector Start = Location;
@@ -117,7 +121,7 @@ Using this data asset we are now able to query the current physical material of 
 
 Updated FootDown function:
 
-{% highlight cpp linenos=table %}
+{% highlight cpp %}
 void AFootprintsCharacter::FootDown(const UArrowComponent* FootArrow) const
 {
     FHitResult HitResult;

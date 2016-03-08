@@ -16,15 +16,9 @@
  $(function () {
 	$.ajax({
 	   url: 'https://api.github.com/repos/{{include.user}}/{{include.repo}}',
-	   success: function(data) {
-		console.log(data);
-		
+	   success: function(data) {		
 		$('div[id="repo-{{include.user}}-{{include.repo}}"] .fork-count').html(data.forks_count);
 		$('div[id="repo-{{include.user}}-{{include.repo}}"] .star-count').html(data.stargazers_count);
-		console.log();
-		
-		
-		console.log(document.getElementById("repo-{{include.user}}-{{include.repo}}"));
 	   }	   
 	});
 	});

@@ -11,7 +11,7 @@ $highlight-color-six: #b1d631;
 $highlight-color-seven: #ff9800;
 
 
-.highlighttable {
+.highlight {
 	max-height: 400px;
 	overflow-x:auto;
 	display:block;
@@ -43,7 +43,8 @@ $highlight-color-seven: #ff9800;
 		border: 0;
 		background-color: transparent;
 		margin: 0px;    
-		padding: 6px 0px;
+		padding: 6px 10px;
+		word-wrap:normal;
 	}
 	
 	pre code {

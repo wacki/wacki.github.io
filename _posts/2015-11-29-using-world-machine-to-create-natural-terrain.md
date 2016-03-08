@@ -11,19 +11,9 @@ Terrains in UE4 seem to be a big selling point since they released the [kite dem
 After opening up World Machine for the first time it seemed instantly familiar to me. This is because back when I started to learn openGL, some of my first projects involved procedural terrain generation. And although not being anywhere near of what World Machine can do, the basics are the same. Generate and combine some different noises and run a few erosion passes on it.
 After playing around with World Machine for a while I decided to try and create a few simple sand dunes for now and then move on to something different. Below you can see my current state. 
 
-<p>
-	<div class="inline-image">
-		<img src="/assets/posts/images/wmdunes.png" >
-		<p>This is what I came up with after some trial and error in world-machine</p>
-	</div>
-</p>
+
 {% include inline-image.html src="2015-11-worldmachine/wmdunes.png" description="This is what I came up with after some trial and error in world-machine" %}
 {% include inline-image.html src="2015-11-worldmachine/ue4dunes.png" description="This is what it looks like inside UE4" %}
-<p>
-	<div class="inline-image">
-		<img src="/assets/posts/images/ue4dunes.png" >
-		<p>This is what it looks like inside UE4</p>
-	</div>
-</p>
+
 
 While looking for terrain examples and stuff other people had done, I stumbled upon [this](http://www.planetside.co.uk/forums/index.php?action=dlattach;topic=18400.0;attach=50771;image) ([source](http://www.planetside.co.uk/forums/index.php?topic=18400.0)). which is much more in the vein of what I want my dunes to look. When I revisit this topic I’m going to use this as a resource. For now I’m happy to have the basics of World Machine down and will move on to other topics.
