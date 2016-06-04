@@ -101,12 +101,14 @@ hr {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.21);
 }
 
-.post h3 {
+.post h3, .post h3 a, .post h3 a:hover {
 	font-weight: bold;
 	font-size: 23px;
 	margin: 0px;
     color: $main-color-light;
 }
+
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
