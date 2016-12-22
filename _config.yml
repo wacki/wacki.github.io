@@ -14,20 +14,23 @@ permalink:		'/blog/:year/:month/:title/'
 
 excerpt_separator: <!--more-->
 
+collections:
+  portfolio:
+    output: true
+    permalink: '/portfolio/:path/'
+
 # Author
 author:
   name: Marc Wacker
   email: wackiblog@gmail.com
   about_me: > # this means to ignore newlines until "baseurl:"
-    I am a programmer trying to get into game development. 
-    This blog is meant to document my learning process and 
-    will include the odd post about other stuff happening 
-    in my life.
+    I am a software engineer currently studying Game Design at VFS in Vancouver, Canada. 
+    Excited to make my first steps towards being a full time game dev. This site acts as my personal blog and portfolio.
   twitter: wacki
   github: wacki
   twitch: wackitv
   youtube: thewackii
-  linkedin: #marc-wacker-266136b3
+  linkedin: marc-wacker-266136b3
   facebook:
   stackoverflow:
   disqus-shortname: wacki
@@ -42,3 +45,9 @@ highlighter: rouge
 
 
 
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: project

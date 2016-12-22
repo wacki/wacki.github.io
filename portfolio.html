@@ -1,0 +1,61 @@
+---
+layout: page
+title: Portfolio
+sort-id: 1
+permalink: /portfolio/
+---
+
+
+
+
+
+{% assign sorted_portfolio = (site.portfolio | sort: 'sort-id' %}
+{% for project in sorted_portfolio %}
+
+  {% if project.publish == false %}
+    {% continue %}
+  {% endif %}
+
+		<div class="project-grid-cell">
+
+		<a href="{{project.url}}">
+
+			<div style="position:relative">
+				<!--<img src="/assets/projects/images/{{project.image}}" />-->
+				<div class="project-preview-image" style="background-image: url('/assets/projects/images/{{project.image}}');"></div>
+				<div class="project-title">
+					{{project.title}}
+				</div>
+			</div>
+			<p>
+				 
+				{% for category in project.category %}
+				  <b>{{category}}</b>
+				  {% if forloop.length > forloop.index %}
+                  , 
+				  {% endif %}
+				{% endfor %}
+				</br>
+
+
+				<!--
+				Platform: 
+				{% for platform in project.platform %}
+				  <b>{{platform}}</b>
+				  {% if forloop.length > forloop.index %}
+                  , 
+				  {% endif %}
+				{% endfor %}
+				</br>
+				-->
+
+
+				<i>{{project.description}}</i>
+			</p>
+		</a>
+		</div>
+
+{% endfor %}
+
+
+<div style="clear:both"></div>
