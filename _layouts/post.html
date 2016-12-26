@@ -16,6 +16,57 @@ layout: default
     {% endfor %}
 
     <p>{{ content }}</p>
+
+
+
+	<div>
+
+
+
+	    {% if page.series != nil %}
+
+		  	{% assign olderPosts = true %}
+		  	{% assign prevPage = nil %}
+		  	{% assign nextPage = nil %}
+			{% for post in site.posts reversed %}
+
+				{% if post.id == page.id %}
+					{% assign olderPosts = false %}
+					{% continue %}
+				{% endif %}
+
+				{% if post.series == page.series %}
+					{% if olderPosts == true %}
+						{% assign prevPage = post %}
+					{% else %}
+						{% assign nextPage = post %}
+						{% break %}
+					{% endif %}
+				{% endif %}
+
+			{% endfor %}
+
+			{% if prevPage != nil or nextPage != nil %}
+	    		This post is part of a series<br/>
+			{% endif %}
+
+			{% if prevPage != nil %}
+				<div style="float:left">
+					<a href="{{prevPage.url}}">prev link</a>
+				</div>
+			{% endif %}
+
+
+			{% if nextPage != nil %}
+				<div style="float:right">
+					<a href="{{nextPage.url}}">next link</a>
+				</div>
+			{% endif %}	
+			<div style="clear:both"></div>
+		{% endif %}
+
+	</div>
+
 </div>
 
 <div id="disqus_thread"></div>
