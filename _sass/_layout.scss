@@ -255,6 +255,73 @@ a:focus, a:hover {
 	float: right;
 }
 
+
+div.series-nav {
+    /* padding: 10px; */
+    /* border: 1px solid #2e2e2e; */
+    /* background-color: #525252; */
+    /* margin: auto 0; */
+    background-color: #353535;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.21);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+div.series-nav h3 {
+	padding: 10px;
+    margin: 0;
+    background: #353535;    
+    font-weight: bold;
+    font-size: 23px;
+    margin: 0px;
+    color: #b6dbe5;
+}
+
+div.series-nav ul {
+	display: block;
+	padding: 0px;
+}
+
+div.series-nav ul li {
+    position: rleative;
+    display: block;
+    /* margin-bottom: 2px; */
+    background: #353535;
+    padding: 3px 15px;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-ms-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+div.series-nav ul li.current {
+    background: #525252;
+}
+
+div.series-nav ul li a {
+	position: relative;
+	display: block;    
+}
+
+div.series-nav ul li:hover {
+	position: relative;
+	display: block;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-ms-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+	background-color: #0ca0d7;
+}
+div.series-nav ul li:hover a {
+	color: #fff;
+}
+
+
+
+
 /* bootstrap changes */
 .navbar-inverse {
     background-color: $main-color-dark;

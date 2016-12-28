@@ -18,56 +18,45 @@ layout: default
     <p>{{ content }}</p>
 
 
-
-	<div>
+</div>
 
 
 
 	    {% if page.series != nil %}
 
-		  	{% assign olderPosts = true %}
-		  	{% assign prevPage = nil %}
-		  	{% assign nextPage = nil %}
-			{% for post in site.posts reversed %}
+	    {% assign postsInSeries = site.posts | where: "series", page.series  %}
+
+		{% if postsInSeries.size > 1 %}
+
+			<div class="series-nav">
+	    		<h3>This post is part of a series:</h3>
+
+	    	<ul class="side-nav">
+
+		  	{% assign count = 1 %}
+			{% for post in postsInSeries reversed %}
 
 				{% if post.id == page.id %}
-					{% assign olderPosts = false %}
-					{% continue %}
-				{% endif %}
+					 <li class="current">Part {{ count }} - {{ post.title }}
+				{% else %}
+					<li>
+						<a href="{{ post.url }}">Part {{ count }} - {{ post.title }}</a>
+					</li>
+				{% endif %}				
 
-				{% if post.series == page.series %}
-					{% if olderPosts == true %}
-						{% assign prevPage = post %}
-					{% else %}
-						{% assign nextPage = post %}
-						{% break %}
-					{% endif %}
-				{% endif %}
+
+
+				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+
 
 			{% endfor %}
 
-			{% if prevPage != nil or nextPage != nil %}
-	    		This post is part of a series<br/>
-			{% endif %}
+			</ul>
 
-			{% if prevPage != nil %}
-				<div style="float:left">
-					<a href="{{prevPage.url}}">prev link</a>
-				</div>
-			{% endif %}
-
-
-			{% if nextPage != nil %}
-				<div style="float:right">
-					<a href="{{nextPage.url}}">next link</a>
-				</div>
-			{% endif %}	
-			<div style="clear:both"></div>
+			</div>
+		{% endif %}
 		{% endif %}
 
-	</div>
-
-</div>
 
 <div id="disqus_thread"></div>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
