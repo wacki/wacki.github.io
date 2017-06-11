@@ -7,10 +7,12 @@ platform: PC
 description: "Dynamic indentation effect using a tessalation shader. Useful for sand and snow visualizations."
 image: unity-snow/preview.png
 sort-id: 0
-publish: false
+publish: true
 ---
 
 Dynamic indentation shader inspired by the sand effects seen in [Journey](https://en.wikipedia.org/wiki/Journey_(2012_video_game)). Achieved using a dynamic height map and tessellation shader in Unity3D.
+
+[Blog post about this topic](/blog/2017/01/dynamic-snow-sand-shader-for-unity/)
 
 <p>
     <div class="inline-image" style="display: block;"><div class="video-container">
