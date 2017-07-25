@@ -5,7 +5,7 @@ category: [Programming]
 technology: Unity
 platform: PC
 description: "2D Platformer made in Unity"
-image: ue4-footprints/preview.png
+image: khaya/preview.png
 sort-id: 2
 publish: true
 ---

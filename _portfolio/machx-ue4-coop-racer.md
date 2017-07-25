@@ -4,17 +4,14 @@ type: "Student Project"
 category: [Programming]
 technology: UE4 
 platform: PC
-description: "Multiplayer Co-op Combat Racing Game."
-image: ue4-footprints/preview.png
+description: "Student Project made at VFS. Wipeout meets Mario Kart Double Dash."
+image: machx-racing/preview.png
 sort-id: 1
 publish: true
 ---
-<h1> PLACEHOLDER CONTENT </h1>
-
 {% include image-carousel.html 
-	images="/assets/projects/images/khaya/screenshot01.png,
-	/assets/projects/images/khaya/screenshot02.png,
-	/assets/projects/images/khaya/screenshot03.png"
+	images="/assets/projects/images/machx-racing/screenshot01.png,
+	/assets/projects/images/machx-racing/screenshot02.png
 %}  
 
 MachX is a Multiplayer Combat Racing game made by a team of 5 VFS students using Unreal Engine 4. In this game two players team up to control one vehicle, one player shoots the other drives. Wipeout meets Mario Kart: Double Dash.
