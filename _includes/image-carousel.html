@@ -7,11 +7,11 @@
 <!-- Indicators -->
 <ol class="carousel-indicators">
 {% for src in imagesarray %}  
-  {% assign activeclass='' %}
-  {% if forloop.index==0 %}
-  	{% assign activeclass=' class="active"' %}
+  {% if forloop.index0==0 %}
+  <li data-target="#myCarousel" data-slide-to="{{forloop.index0}}" class="active"></li>
+  {% else %}
+  <li data-target="#myCarousel" data-slide-to="{{forloop.index0}}"></li>
   {% endif %}
-  <li data-target="#myCarousel" data-slide-to="{{forloop.index0}}"{{activeclass}}></li>
 
 {% endfor %}
 </ol>

@@ -9,6 +9,13 @@ image: ue4-footprints/preview.png
 sort-id: 1
 publish: true
 ---
+<h1> PLACEHOLDER CONTENT </h1>
+
+{% include image-carousel.html 
+	images="/assets/projects/images/khaya/screenshot01.png,
+	/assets/projects/images/khaya/screenshot02.png,
+	/assets/projects/images/khaya/screenshot03.png"
+%}  
 
 MachX is a Multiplayer Combat Racing game made by a team of 5 VFS students using Unreal Engine 4. In this game two players team up to control one vehicle, one player shoots the other drives. Wipeout meets Mario Kart: Double Dash.
 
@@ -24,7 +31,10 @@ Being a multiplayer game this project offered some tough challenges on multiple 
 - Worked closely with team members from other disciplines
 
 
-{% include image-carousel.html 
-	images="/assets/posts/images/2015-12-footprints/add_notify.png,
-	/assets/posts/images/2015-12-footprints/add_notify.png"
-%}  
+<p>
+    <div class="inline-image" style="display: block;"><div class="video-container">
+        <iframe src="https://www.youtube.com/embed/CfAyrvJKDWc" frameborder="0"></iframe>
+        </div>      
+        <p>MachX ALPHA gameplay trailer</p>
+    </div>
+</p>
