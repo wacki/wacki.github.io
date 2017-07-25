@@ -9,6 +9,7 @@ image: machx-racing/preview.png
 sort-id: 1
 publish: true
 ---
+
 {% include image-carousel.html 
 	images="/assets/projects/images/machx-racing/screenshot01.png,
 	/assets/projects/images/machx-racing/screenshot02.png

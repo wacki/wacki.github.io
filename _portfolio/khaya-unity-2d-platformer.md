@@ -10,7 +10,6 @@ sort-id: 2
 publish: true
 ---
 
-
 {% include image-carousel.html 
 	images="/assets/projects/images/khaya/screenshot01.png,
 	/assets/projects/images/khaya/screenshot02.png,
