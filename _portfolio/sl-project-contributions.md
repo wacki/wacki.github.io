@@ -18,7 +18,7 @@ Find out more about SLProject in the official [documentation](http://cpvrlab.git
 
 * Skeletal animation system
 	* GPU and CPU skinning support
-* Major scene graph heirarchy improvements
+* Major scene graph hierarchy improvements
 	* Performance improved by up to 40%
 * Generic input device system
 * Oculus rift integration

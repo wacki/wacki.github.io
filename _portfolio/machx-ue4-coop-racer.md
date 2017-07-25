@@ -26,8 +26,8 @@ Being a multiplayer game this project offered some tough challenges on multiple 
 - Multiplayer lobby
 - Hover vehicle driving physics
 - Spline based level actor with customizable speed strips
-- racing multiplayer game mode
-- some VFX material and particle work
+- Racing multiplayer game mode
+- Some VFX material and particle work
 - Worked closely with team members from other disciplines
 
 
