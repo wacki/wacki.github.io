@@ -6,7 +6,7 @@ engine: "Unity"
 platform: PC
 description: "VR GUI Module for Unity. Includes implementation for HTC Vive."
 image: unity-vr-gui/preview.png
-sort-id: 1
+sort-id: 6
 ---
 
 Generic VR UI Module for Unity's uGUI system. Easily extendable to support multiple 3D pointer based input methods. 

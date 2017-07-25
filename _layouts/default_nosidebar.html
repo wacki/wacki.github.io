@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+
+    {% if jekyll.environment == "production" %}
+        {% include google-analytics.html %}   
+    {% endif %} 
+</head>
+<body>
+    <div id="top-nav">
+        {% include top-nav.html %}
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9 content-col">
+                {{ content }}
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

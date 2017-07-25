@@ -6,7 +6,7 @@ engine: "Unity"
 platform: PC
 description: "Dynamic indentation effect using a tessalation shader. Useful for sand and snow visualizations."
 image: unity-snow/preview.png
-sort-id: 0
+sort-id: 7
 publish: true
 ---
 
