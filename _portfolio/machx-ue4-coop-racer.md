@@ -12,7 +12,7 @@ publish: true
 
 {% include image-carousel.html 
 	images="/assets/projects/images/machx-racing/screenshot01.png,
-	/assets/projects/images/machx-racing/screenshot02.png
+	/assets/projects/images/machx-racing/screenshot02.png"
 %}  
 
 MachX is a Multiplayer Combat Racing game made by a team of 5 VFS students using Unreal Engine 4. In this game two players team up to control one vehicle, one player shoots the other drives. Wipeout meets Mario Kart: Double Dash.

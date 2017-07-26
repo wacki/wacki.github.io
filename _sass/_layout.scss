@@ -169,11 +169,12 @@ hr {
 
 .project-grid-cell .project-preview-image {
     width: 100%;
-    height: 150px;
+    height: 172px;
     background-size: auto 100%;
     background-repeat: no-repeat;
     opacity: 0.9;
     background-position-x: 50%;
+    margin-top: 37px;
 }
 
 .project-grid-cell:hover .project-preview-image {
@@ -194,7 +195,7 @@ hr {
 
 .project-grid-cell .project-title {
 	position: absolute; 
-	top: 0px;         
+	top: -37px;         
 	background: rgba(66, 66, 66, 0.75);
 	padding: 5px; 
 	width: 100%; 
@@ -453,3 +454,61 @@ div.series-nav ul li:hover a {
 
 
 
+.resume a.top-links {
+	font-size: 20px;
+	color: #ddd;
+    vertical-align: middle;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px; 
+    float:right;
+}
+
+.resume a.top-links:hover {
+    background-color: #ddd;
+    text-decoration: none;
+}
+
+
+
+.resume a.top-links.pdf {
+	background-color: #f24236;
+}
+.resume a.top-links.pdf:hover {
+	background-color: #ff0000;
+}
+
+.resume a.top-links.linkedin {
+	background-color: #0077b5;
+}
+.resume a.top-links.linkedin:hover {
+	background-color: #2d9cd6;
+}
+
+.resume h2 {
+	color: #0ca0d7;
+	margin-top: 40px;
+	font-size: 22px;
+}
+
+.resume h3 {
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.resume h3 > span.project-date {
+	font-size: 14px;
+	float: right;
+}
+
+.resume h4 {
+	font-size: 12px;
+}
+
+.carousel {
+	margin-bottom: 10px;
+}
+
+.resume {
+	margin-bottom: 140px;
+}
