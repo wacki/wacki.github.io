@@ -31,8 +31,8 @@ Being a multiplayer game this project offered some tough challenges on multiple 
 
 <p>
     <div class="inline-image" style="display: block;"><div class="video-container">
-        <iframe src="https://www.youtube.com/embed/CfAyrvJKDWc" frameborder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/OnEHMXpsaVQ" frameborder="0"></iframe>
         </div>      
-        <p>MachX ALPHA gameplay trailer</p>
+        <!--<p>MachX ALPHA gameplay trailer</p>-->
     </div>
 </p>
