@@ -24,8 +24,7 @@ author:
   name: Marc Wacker
   email: wackiblog@gmail.com
   about_me: > # this means to ignore newlines until "baseurl:"
-    I am a software engineer currently studying Game Design at VFS in Vancouver, Canada. 
-    Excited to make my first steps towards being a full time game dev. This site acts as my personal blog and portfolio.
+    I am a Programmer / Technical Artist living and working in Vancouver, Canada. This is my personal blog and portfolio where I infrequently post about the stuff I do.
   twitter: wacki
   github: wacki
   twitch: wackitv
@@ -36,8 +35,7 @@ author:
   disqus-shortname: wacki
 
 description: > 
-  Personal blog of Marc Wacker. I use this blog to document my learning process
-  in different areas. Mostly game development. I might also use it for other stuff.
+  Personal blog of Marc Wacker.
 
 # Build settings
 markdown: kramdown
