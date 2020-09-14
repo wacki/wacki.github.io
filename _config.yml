@@ -15,7 +15,7 @@ permalink:		'/blog/:year/:month/:title/'
 excerpt_separator: <!--more-->
 
 collections:
-  portfolio:
+  projects:
     output: true
     permalink: '/projects/:path/'
 
