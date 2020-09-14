@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Portfolio
+title: Projects
 sort-id: 1
-permalink: /portfolio/
+permalink: /projects/
 ---
 
 
 
 
 
-{% assign sorted_portfolio = (site.portfolio | sort: 'sort-id' %}
-{% for project in sorted_portfolio %}
+{% assign sorted_projects = (site.projects | sort: 'sort-id' %}
+{% for project in sorted_projects %}
 
   {% if project.publish == false %}
     {% continue %}

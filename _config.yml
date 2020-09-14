@@ -17,14 +17,14 @@ excerpt_separator: <!--more-->
 collections:
   portfolio:
     output: true
-    permalink: '/portfolio/:path/'
+    permalink: '/projects/:path/'
 
 # Author
 author:
   name: Marc Wacker
   email: wackiblog@gmail.com
   about_me: > # this means to ignore newlines until "baseurl:"
-    I am a Programmer / Technical Artist living and working in Vancouver, Canada. This is my personal blog and portfolio where I infrequently post about the stuff I do.
+    Programmer working in Vancouver. Blog is dead until it's not.
   twitter: wacki
   github: wacki
   twitch: wackitv
@@ -46,6 +46,6 @@ highlighter: rouge
 defaults:
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: project
