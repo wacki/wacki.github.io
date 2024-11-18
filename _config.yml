@@ -21,25 +21,26 @@ collections:
 
 # Author
 author:
-  name: Marc Wacker
+  name: 
   email: wackiblog@gmail.com
   about_me: > # this means to ignore newlines until "baseurl:"
     Programmer working in Vancouver. Blog is dead until it's not.
   twitter: wacki
   github: wacki
-  twitch: wackitv
-  youtube: thewackii
-  linkedin: marc-wacker
-  facebook:
-  stackoverflow:
+  bluesky: wacki
   disqus-shortname: wacki
 
 description: > 
-  Personal blog of Marc Wacker.
+  Personal blog.
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+    span:
+      line_numbers: true
 
 
 

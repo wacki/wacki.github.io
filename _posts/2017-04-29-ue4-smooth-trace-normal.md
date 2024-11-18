@@ -15,7 +15,7 @@ Most of the resources I found were talking about getting UV coordinates for a Li
 
 The following code is part of my static c++ function library. It accepts a FHitResult reference and calculates an interpolated normal based on the triangle that was hit. This works for both Static Mesh as well as Spline Mesh Components. However this code is by no means perfect and I am sure there is a lot that could be improved.
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 bool GetSmoothNormalFromTrace(const FHitResult& HitResult, FVector& Normal, bool DebugDraw)
 {
     // We don't care if this isn't a blocking hit

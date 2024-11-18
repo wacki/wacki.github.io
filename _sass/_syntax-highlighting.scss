@@ -2,30 +2,31 @@
  * Syntax highlighting styles
  */
 
-$highlight-color-one: #e2e2e5;
+ $highlight-color-one: #000000;
 $highlight-color-two: #0ca0d7;
 $highlight-color-three: #64868f;
-$highlight-color-four: #faf4c6;
-$highlight-color-five: #f6f3e8;
+$highlight-color-four: #2b2b2b;
+$highlight-color-five: #2c2c2c;
 $highlight-color-six: #b1d631;
 $highlight-color-seven: #ff9800;
-
+$highlight-color-eight: #000000;
+$highlight-background-color: #dbdbce;
 
 .highlight {
 	max-height: 400px;
 	overflow-x:auto;
 	display:block;
 	margin: 5px 0px;
-	background: #151414;
+	background: $highlight-background-color;
 	
 	.linenos, .highlight {	
-		background: #212121;
+		background: $highlight-background-color;
 		text-shadow: none;
 		color: $highlight-color-one;
 	}
 
 	.linenos {
-		background-color: #151414;
+		background-color: $highlight-background-color;
 		padding: 0px 5px;
 	}
 	
@@ -45,6 +46,7 @@ $highlight-color-seven: #ff9800;
 		margin: 0px;    
 		padding: 6px 10px;
 		word-wrap:normal;
+		overflow-x: auto;
 	}
 	
 	pre code {
@@ -113,14 +115,14 @@ $highlight-color-seven: #ff9800;
 	.ld { color: $highlight-color-one} /* Literal.Date */
 	.m { color: $highlight-color-seven} /* Literal.Number */
 	.s { color: $highlight-color-six; font-style: italic} /* Literal.String */
-	.na { color: #ffffff; font-weight: bold} /* Name.Attribute */
+	.na { color: $highlight-color-eight; font-weight: bold} /* Name.Attribute */
 	.nb { color: $highlight-color-one} /* Name.Builtin */
 	.nc { color: $highlight-color-one} /* Name.Class */
 	.no { color: $highlight-color-seven} /* Name.Constant */
 	.nd { color: $highlight-color-one} /* Name.Decorator */
 	.ni { color: $highlight-color-seven} /* Name.Entity */
 	.ne { color: $highlight-color-one} /* Name.Exception */
-	.nf { color: #ffffff; font-weight: bold} /* Name.Function */
+	.nf { color: $highlight-color-eight; font-weight: bold} /* Name.Function */
 	.nl { color: $highlight-color-one} /* Name.Label */
 	.nn { color: $highlight-color-one} /* Name.Namespace */
 	.nx { color: $highlight-color-one} /* Name.Other */

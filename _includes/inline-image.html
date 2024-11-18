@@ -1,8 +1,15 @@
+{% if include.width %} 
+{% assign widthoverride = 'style="width=' |  append: {{include.width}} | append: ' !important;"' %}
+{% endif %}
+
 <p>
-	<div class="inline-image">
+	<div class="inline-image" {{widthoverride}} >
 		<img src="/assets/posts/images/{{include.src}}" >
 		{% if include.description %}
 		<p>{{include.description}}</p>
 		{% endif %}
 	</div>
 </p>
+
+
+{% assign widthoverride = "" %}

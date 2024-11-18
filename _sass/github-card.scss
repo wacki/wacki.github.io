@@ -1,14 +1,14 @@
 .github-card {
     border-radius: 3px;
 	padding: 4px 8px 0;
-    background: #1F1F1F;
+    background: #D5D2CB;
 	display: inline-block;
 
 	.octicon-repo {
 		margin-right: 2px;
 		margin-top: 3px;
 		font-size: 16px;
-		color: #B6DBE5;
+		color: #000;
 		float: left;
 	}
 	.status strong {
@@ -31,7 +31,7 @@
 .footer {
     border-top: 1px solid #353535;
     padding: 0px 0px 3px;
-    color: #ADADAD;
+    //color: #ADADAD;
     margin-top: 5px;
     text-shadow: none;
 }

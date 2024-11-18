@@ -11,20 +11,24 @@
 
 $spacing-unit:     30px;
 
-$text-color:       #dddddd;
-$background-color: #232323;
+$text-color:       #000000;
+$background-color: #f2efe8;
 $brand-color:      #2a7ae2;
 
 $main-color-dark:  #0ca0d7;
 $main-color-light: #b6dbe5;
 $main-color-dark-shadow: #087ec9;
 
+$post-title-color: $main-color-dark;
+$post-title-color: #454545;
+
 $light-gray: #353535;
 $dark-gray: #232323;
+$post-background-color: transparent;
 
 // Width of the content area
 $content-width:    850px;
-$content-width-large:  1000px;
+$content-width-large:  1300px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
