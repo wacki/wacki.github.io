@@ -41,7 +41,7 @@ The decal looks too smooth on this new terrain, we have to add some sand grains 
 
 <p>
 	<div class="rambling-box">
-	<img src="/assets/posts/images/2015-12-footprints/overlapping.png" style="width: 30%; float: left;margin: 4px 22px 0px 0px; border:1px solid #0CA0D7;" />
+	<img src="/assets/posts/images/2015-12-footprints/overlapping.png" style="width: 18%; float: left;margin: 4px 22px 0px 0px; border:1px solid #0CA0D7;" />
 	
 	A big problem when using this decal method is overlapping footprints. It looks really fake when this happens. It might be possible to mitigate the effect through some blending technique, however a more interesting approach might be to use an additional height map. The game Journey has a great sand simulation where you can slide down hills and leave a trail behind. They used additional detail height maps that reacted to players foot prints on top of the terrain (<a href="http://www.thatgamecompany.com/forum/viewtopic.php?p=11191#p11191">source</a>). I guess tessellation for certain ground types like sand and snow might in fact be the ideal solution and I definitely want to come back to this topic at some point in time.
 	</div>
